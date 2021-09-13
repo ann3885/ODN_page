@@ -2,7 +2,7 @@ $(document).ready(function () {
   function typed() {
     new Typed(".typed1", {
       strings: ["Support"],
-      typeSpeed: 65,
+      typeSpeed: 70,
       fadeOut: true,
       loop: false,
       cursorChar: "",
@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     new Typed(".typed2", {
       strings: ["Q&A"],
-      typeSpeed: 65,
+      typeSpeed: 70,
       fadeOut: true,
       loop: false,
       cursorChar: "",
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
     new Typed(".en.step1", {
       strings: ["About US"],
-      typeSpeed: 65,
+      typeSpeed: 70,
       fadeOut: true,
       loop: false,
       cursorChar: "",
@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     new Typed(".en.step2", {
       strings: ["Data<br />Service"],
-      typeSpeed: 65,
+      typeSpeed: 70,
       fadeOut: true,
       loop: false,
       cursorChar: "",
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
     new Typed(".en.step3", {
       strings: ["IOT<br />Product"],
-      typeSpeed: 65,
+      typeSpeed: 70,
       fadeOut: true,
       loop: false,
       cursorChar: "",
@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     new Typed(".ko.step1", {
       strings: ["회사소개<br />포트폴리오"],
-      typeSpeed: 65,
+      typeSpeed: 70,
       fadeOut: true,
       loop: false,
       cursorChar: "",
@@ -50,7 +50,7 @@ $(document).ready(function () {
 
     new Typed(".ko.step2", {
       strings: ["서비스 소개"],
-      typeSpeed: 65,
+      typeSpeed: 70,
       fadeOut: true,
       loop: false,
       cursorChar: "",
@@ -58,7 +58,7 @@ $(document).ready(function () {
 
     new Typed(".ko.step3", {
       strings: ["제품소개"],
-      typeSpeed: 65,
+      typeSpeed: 70,
       fadeOut: true,
       loop: false,
       cursorChar: "",

@@ -313,6 +313,17 @@ header .inner .wrap nav ul li a:hover span {
   width: 50%;
   z-index: 2;
 }
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .section1 .img_box .wrap .ani .txt:before {
   content: "";
   position: absolute;
@@ -320,6 +331,8 @@ header .inner .wrap nav ul li a:hover span {
   height: 14px;
   border-radius: 100%;
   background-color: #bf9000;
+  animation: 1s show ease backwards;
+  animation-delay: 0.5s;
 }
 .section1 .img_box .wrap .ani .txt i {
   position: absolute;
@@ -334,12 +347,16 @@ header .inner .wrap nav ul li a:hover span {
   position: absolute;
   height: 2px;
   background-color: #bf9000;
+  animation: 1s show ease backwards;
+  animation-delay: 0.5s;
 }
 .section1 .img_box .wrap .ani .txt i:after {
   content: "";
   position: absolute;
   width: 2px;
   background-color: #bf9000;
+  animation: 1s show ease backwards;
+  animation-delay: 0.5s;
 }
 .section1 .img_box .wrap .ani .about {
   top: 0;
@@ -357,19 +374,16 @@ header .inner .wrap nav ul li a:hover span {
   text-align: right;
 }
 .section1 .img_box .wrap .ani .about:before {
-  left: 81px;
+  left: 74px;
   top: 74px;
-  transform: translateX(-50%);
 }
 .section1 .img_box .wrap .ani .service:before {
   left: calc(100% - 280px + 148px);
-  bottom: 61px;
-  transform: translateY(50%);
+  bottom: 54px;
 }
 .section1 .img_box .wrap .ani .product:before {
   right: calc(100% - 293px + 116px);
-  bottom: 181px;
-  transform: translateY(50%);
+  bottom: 174px;
 }
 .section1 .img_box .wrap .ani .about i:before {
   left: 80px;
@@ -432,11 +446,22 @@ header .inner .wrap nav ul li a:hover span {
   color: #bf9000;
 }
 .section1 .img_box .wrap .ani .txt .txt_wrap .line_box {
+  position: relative;
   margin-top: 10px;
   padding-left: 10px;
   height: 60px;
   text-align: left;
-  border-left: 2px solid #878787;
+}
+.section1 .img_box .wrap .ani .txt .txt_wrap .line_box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: #878787;
+  animation: 1s show ease backwards;
+  animation-delay: 0.5s;
 }
 .section1 .img_box .wrap .ani .txt.about .txt_wrap .line_box {
   margin-left: 10px;
@@ -446,9 +471,12 @@ header .inner .wrap nav ul li a:hover span {
   padding-left: 0;
   padding-right: 10px;
   border-left: none;
-  border-right: 2px solid #878787;
   display: inline-block;
   vertical-align: middle;
+}
+.section1 .img_box .wrap .ani .txt.service .txt_wrap .line_box:before {
+  left: auto;
+  right: 0;
 }
 .section1 .img_box .wrap .ani .txt.product .txt_wrap .line_box {
   margin-left: 9px;
@@ -615,7 +643,7 @@ header .inner .wrap nav ul li a:hover span {
   }
   .section1 .img_box .wrap .ani .service:before {
     left: calc(100% - 100px + 35px);
-    bottom: calc(96px + 32px + 1px);
+    bottom: calc(96px + 25px + 1px);
   }
   .section1 .img_box .wrap .ani .service i:after {
     left: 35px;
@@ -635,7 +663,7 @@ header .inner .wrap nav ul li a:hover span {
   }
   .section1 .img_box .wrap .ani .product:before {
     right: calc(100% - 100px + 35px);
-    bottom: calc(96px + 32px + 1px);
+    bottom: calc(96px + 25px + 1px);
   }
   .section1 .img_box .wrap .ani .product i:after {
     right: 35px;
